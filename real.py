@@ -14,7 +14,6 @@ import f90nml
 from io import StringIO
 
 from namelist import *
-
 from domain import *
 from enviroment import *
 

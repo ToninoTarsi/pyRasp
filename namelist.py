@@ -23,14 +23,12 @@ SCHEMA_VAR_TYPES = {
 SCHEMA_CACHE = {} # type: Dict[str,Any]
 SCHEMA_DIR = os.path.join(os.path.dirname(__file__),  'nml_schemas')
 
-
 def read_namelist(path: Union[str, StringIO], schema_name: Optional[str]=None) -> dict:
     if isinstance(path, str) and not os.path.exists(path):
         raise Exception(f'Namelist file {path} does not exist')
     try:
         nml = f90nml.read(path)
     except:
-        # f90nml does not raise useful exceptions, so we can't include details here
         raise Exception(f'Namelist file {path} could not be parsed')
     
     # If a schema is specified, use it to fix single-element lists which are parsed as

@@ -41,7 +41,6 @@ def downloadGFSA(overwrite=True) -> dict :
 
     paths = []
 
-
     for i in range (0, DOMAIN1_ENDHH-DOMAIN1_STARTHH+1):
         forecast = (start + i - init_time)
         gfs_file =  "gfs.t%2.2dz.pgrb2.0p25.f%3.3d" % (init_time, forecast ) 
@@ -73,9 +72,6 @@ def downloadGFSA(overwrite=True) -> dict :
             myfile.close()
             file2.close()
             os.remove(grib_path_tmpb) 
-
-
-
 
     result = {
         "dataset": "null",
@@ -119,7 +115,6 @@ def download_file_with_progress(url: str, path: str, session=None) -> Iterable[f
         if new_session:
             session.close()
 
-# https://www.peterbe.com/plog/best-practice-with-retries-with-requests
 def requests_retry_session(retries=3, backoff_factor=0.3, status_forcelist=(500, 502, 503, 504), session=None):
     session = session or requests.Session()
     retry = Retry(
