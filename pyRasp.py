@@ -1,8 +1,12 @@
-import math
-import datetime
-import os
+# pyRasp 
+# Copyright (c) Tonino Tarsi 2020. Licensed under MIT.
 
-from domain import *
+# requirement :
+# Python 3 
+# pip install pyyaml
+# pip install request
+# pip install f90nml
+
 
 from downloadGFSA import downloadGFSA
 from prepare_wps import prepare_wps

@@ -1,3 +1,6 @@
+# pyRasp 
+# Copyright (c) Tonino Tarsi 2020. Licensed under MIT.
+
 import math
 import datetime
 import os

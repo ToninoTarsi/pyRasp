@@ -1,4 +1,6 @@
-from typing import Dict, Any, Union, Optional
+# pyRasp 
+# Copyright (c) Tonino Tarsi 2020. Licensed under MIT.from typing import Dict, Any, Union, Optional
+
 import math
 import datetime
 import os

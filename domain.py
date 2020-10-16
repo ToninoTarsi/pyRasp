@@ -1,5 +1,8 @@
-# ---------- Inputs
+# pyRasp 
+# Copyright (c) Tonino Tarsi 2020. Licensed under MIT.
 
+
+# ---------- Inputs
 
 BASEDIR = "E:/Rasp/gis4wrf/projects/"
 DOMAIN = "CUCCOHD"

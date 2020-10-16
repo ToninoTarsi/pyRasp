@@ -1,6 +1,5 @@
-# pip install pyyaml
-# pip install request
-# pip install f90nml
+# pyRasp 
+# Copyright (c) Tonino Tarsi 2020. Licensed under MIT.
 
 import glob
 import math
